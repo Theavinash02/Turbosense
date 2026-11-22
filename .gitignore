@@ -1,2 +1,14 @@
-venv/
-data/
+/data/
+# Trained weights are not committed, except the small FD004 set that the API and the Docker image serve.
+models/*
+!models/FD004_condition/
+mlruns/
+mlartifacts/
+mlflow.db
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.ipynb_checkpoints/
+.gradio/
