@@ -8,6 +8,7 @@ import gradio as gr
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+import spaces
 
 from rul.config import load_config
 from rul.data import COLUMNS, add_condition
@@ -41,6 +42,7 @@ def prefix_windows(a: np.ndarray, window: int) -> np.ndarray:
 
 
 @lru_cache(maxsize=64)
+@spaces.GPU(duration=10)  # Hugging Face ZeroGPU needs one decorated function; the small LSTMs run on CPU
 def trajectory(unit: int) -> pd.DataFrame:
     """Score one test engine at every flight of its recorded history."""
     df = TEST[TEST.unit == unit].sort_values("cycle").reset_index(drop=True)
