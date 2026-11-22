@@ -1,0 +1,8 @@
+*
+!pyproject.toml
+!README.md
+!src
+!configs
+!models/FD004_condition
+**/__pycache__
+**/*.egg-info
