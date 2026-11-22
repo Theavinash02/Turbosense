@@ -1,0 +1,18 @@
+{
+    "engine_id": "FD004-test-77",
+    "model_subset": "FD004",
+    "cycles_received": 108,
+    "padded": false,
+    "rul_cycles": 34.510315577189125,
+    "rul_min": 31.18842887878418,
+    "rul_max": 38.136295318603516,
+    "at_cap": false,
+    "unseen_condition_share": 0.0,
+    "anomaly": {
+        "available": true,
+        "reason": null,
+        "score": 10.833323363606594,
+        "threshold": 6.2462701962215,
+        "alarm": true
+    }
+}
