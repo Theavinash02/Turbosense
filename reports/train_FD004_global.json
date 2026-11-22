@@ -1,0 +1,53 @@
+{
+  "subset": "FD004",
+  "scaling": "global",
+  "test_engines": 248,
+  "train_engines": 199,
+  "val_engines": 50,
+  "conditions": 6,
+  "lightgbm": {
+    "val_rmse": 19.38872157046031,
+    "rmse_capped": 19.627632344239082,
+    "rmse_true": 30.93080059244089,
+    "nasa": 8956.580519513594,
+    "nasa_per_engine": 36.11524403029675
+  },
+  "lstm": [
+    {
+      "seed": 0,
+      "epochs": 25,
+      "seconds": 121.5,
+      "first_train_mse": 0.11957233306748907,
+      "last_train_mse": 0.01580120727725091,
+      "val_rmse": 19.005807347840484,
+      "rmse_capped": 19.242392379989493,
+      "rmse_true": 31.31490980737003,
+      "nasa": 11092.149461323326,
+      "nasa_per_engine": 44.72640911823922
+    },
+    {
+      "seed": 1,
+      "epochs": 14,
+      "seconds": 64.6,
+      "first_train_mse": 0.08736287385808023,
+      "last_train_mse": 0.017222772850143397,
+      "val_rmse": 19.37640673036154,
+      "rmse_capped": 19.322362403511562,
+      "rmse_true": 30.672945740391594,
+      "nasa": 9074.44020276691,
+      "nasa_per_engine": 36.59048468857625
+    },
+    {
+      "seed": 2,
+      "epochs": 17,
+      "seconds": 81.0,
+      "first_train_mse": 0.15660201063036253,
+      "last_train_mse": 0.01757676227146576,
+      "val_rmse": 19.134803981526083,
+      "rmse_capped": 19.265096326202187,
+      "rmse_true": 31.11544447923848,
+      "nasa": 9107.697349515893,
+      "nasa_per_engine": 36.72458608675763
+    }
+  ]
+}
