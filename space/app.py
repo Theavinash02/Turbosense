@@ -222,4 +222,4 @@ with gr.Blocks(title="Turbofan remaining useful life") as demo:
     demo.load(render, [engine, flights], outputs)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(ssr_mode=False)  # server-side rendering fails on Spaces and leaves an unstyled page
