@@ -1,0 +1,42 @@
+{
+  "subset": "FD003",
+  "settings": {
+    "smooth": 10,
+    "baseline_cycles": 20,
+    "quantile": 0.99,
+    "persist": 5,
+    "near_failure_rul": [
+      30,
+      50
+    ]
+  },
+  "threshold": 6.5830153470205515,
+  "own_baseline": {
+    "validation": {
+      "engines": 20,
+      "detected_share": 1.0,
+      "median_lead_cycles": 72.0,
+      "lead_p10_cycles": 43.8,
+      "early_alarm_share": 0.0,
+      "healthy_row_exceed_rate": 0.0
+    },
+    "test_auroc": {
+      "rul_le_30": 0.97375,
+      "rul_le_50": 0.9475473530840214
+    }
+  },
+  "fleet_reference": {
+    "validation": {
+      "engines": 20,
+      "detected_share": 0.9,
+      "median_lead_cycles": 21.0,
+      "lead_p10_cycles": 4.1000000000000005,
+      "early_alarm_share": 0.0,
+      "healthy_row_exceed_rate": 0.011183597390493943
+    },
+    "test_auroc": {
+      "rul_le_30": 0.951875,
+      "rul_le_50": 0.9218067022826615
+    }
+  }
+}
